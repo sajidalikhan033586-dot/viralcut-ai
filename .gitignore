@@ -1,0 +1,57 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache & build files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Frontend dependencies (keep built dist so users don't need Node.js)
+frontend/node_modules/
+frontend/.vite/
+frontend/dist-ssr/
+frontend/*.tsbuildinfo
+!frontend/dist/
+!frontend/dist/**
+
+# Application user media & database (preserve directory structure via .gitkeep)
+data/downloads/*
+!data/downloads/.gitkeep
+data/audio/*
+!data/audio/.gitkeep
+data/clips/*
+!data/clips/.gitkeep
+data/subtitles/*
+!data/subtitles/.gitkeep
+data/cache/*
+!data/cache/.gitkeep
+data/*.db
+data/*.db-journal
+
+# OS & Editor generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
