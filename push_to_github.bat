@@ -1,9 +1,9 @@
 @echo off
-title Push VIRALCUT AI to GitHub
+title Push NextRise Clipper AI to GitHub
 color 0A
 cd /d "%~dp0"
 echo =====================================================================
-echo    Pushing VIRALCUT AI Studio to GitHub
+echo    Pushing NextRise Clipper AI Studio to GitHub
 echo    Target: https://github.com/sajidalikhan033586-dot/viralcut-ai.git
 echo =====================================================================
 echo.
@@ -13,7 +13,7 @@ git push -u origin main
 if %ERRORLEVEL% EQU 0 (
     echo.
     echo =====================================================================
-    echo  [+] SUCCESS! Your project has been uploaded to GitHub!
+    echo  [+] SUCCESS! NextRise Clipper AI has been uploaded to GitHub!
     echo  [+] View repo: https://github.com/sajidalikhan033586-dot/viralcut-ai
     echo =====================================================================
 ) else (

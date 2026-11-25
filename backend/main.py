@@ -1,5 +1,6 @@
 """
-VIRALCUT AI - FastAPI Application Server
+NextRise Clipper AI - FastAPI Application Server
+Developed for NextRise Digital (nextrisehq.com) - Learn. Earn. Rise.
 Provides REST API, WebSocket real-time progress streaming, media serving, and desktop shell integration.
 """
 
@@ -25,8 +26,8 @@ from backend.input_manager import InputManager
 from backend.job_engine import JobEngine
 
 app = FastAPI(
-    title="VIRALCUT AI API",
-    description="Intelligent Autonomous Viral Video Clipping Engine",
+    title="NextRise Clipper AI API",
+    description="NextRise Digital - Autonomous Short-Form Video Intelligence Engine",
     version="1.0.0"
 )
 
@@ -260,7 +261,7 @@ async def download_all_clips_as_zip(job_id: str):
     return FileResponse(
         str(zip_path),
         media_type="application/zip",
-        filename=f"VIRALCUT_{job.get('video_title', 'clips')[:30]}.zip"
+        filename=f"NextRise_Clips_{job.get('video_title', 'clips')[:30]}.zip"
     )
 
 # --- CLIP ENDPOINTS ---

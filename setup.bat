@@ -1,10 +1,11 @@
 @echo off
-title VIRALCUT AI - Automatic Studio Setup
+title NextRise Clipper AI - Automatic Studio Setup
 color 0B
 
 echo ===============================================================================
-echo     VIRALCUT AI - Autonomous Short-Form Video Clipping Studio
-echo                   One-Click Automatic Environment Setup
+echo     NextRise Clipper AI - Autonomous Short-Form Video Studio
+echo             Powered by NextRise Digital (nextrisehq.com)
+echo               One-Click Automatic Environment Setup
 echo ===============================================================================
 echo.
 cd /d "%~dp0"
@@ -48,7 +49,7 @@ if %ERRORLEVEL% EQU 0 (
 )
 
 echo.
-echo [ERROR] Python 3.10+ is required to run VIRALCUT AI.
+echo [ERROR] Python 3.10+ is required to run NextRise Clipper AI.
 echo Please download and install Python from: https://www.python.org/downloads/
 echo (IMPORTANT: Make sure to check the box "Add Python to PATH" during installation)
 echo.
@@ -97,7 +98,6 @@ echo.
 echo [*] Step 4/5: Installing and verifying AI libraries (Whisper, PyTorch, FastAPI, OpenCV)...
 echo [*] Upgrading pip package installer...
 .\.venv\Scripts\python.exe -m pip install --upgrade pip -q
-
 echo [*] Installing requirements from requirements.txt...
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 if %ERRORLEVEL% NEQ 0 (
@@ -110,9 +110,9 @@ echo.
 
 :: 5. CREATE DESKTOP SHORTCUT
 echo [*] Step 5/5: Creating one-click Desktop shortcut...
-powershell -NoProfile -ExecutionPolicy Bypass -Command "$ws = New-Object -ComObject WScript.Shell; $d = [System.IO.Path]::Combine([Environment]::GetFolderPath('Desktop'), 'VIRALCUT AI Studio.lnk'); $s = $ws.CreateShortcut($d); $s.TargetPath = [System.IO.Path]::Combine('%~dp0', 'start.bat'); $s.WorkingDirectory = '%~dp0'; $s.Description = 'VIRALCUT AI - Autonomous Short-Form Video Clipping Studio'; $s.Save()"
-if exist "%UserProfile%\Desktop\VIRALCUT AI Studio.lnk" (
-    echo [+] Shortcut 'VIRALCUT AI Studio' created on your Desktop!
+powershell -NoProfile -ExecutionPolicy Bypass -Command "$ws = New-Object -ComObject WScript.Shell; $d = [System.IO.Path]::Combine([Environment]::GetFolderPath('Desktop'), 'NextRise Clipper AI.lnk'); $s = $ws.CreateShortcut($d); $s.TargetPath = [System.IO.Path]::Combine('%~dp0', 'start.bat'); $s.WorkingDirectory = '%~dp0'; $s.Description = 'NextRise Clipper AI - Autonomous Short-Form Video Studio by NextRise Digital'; $s.Save()"
+if exist "%UserProfile%\Desktop\NextRise Clipper AI.lnk" (
+    echo [+] Shortcut 'NextRise Clipper AI' created on your Desktop!
 ) else (
     echo [NOTE] You can launch the studio anytime by double-clicking 'start.bat'.
 )
@@ -120,22 +120,22 @@ echo.
 
 :: VERIFICATION CHECK
 echo [*] Running system diagnostic validation...
-.\.venv\Scripts\python.exe -c "import fastapi, uvicorn, whisper, cv2, torch; print('    [OK] FastAPI, Whisper STT, OpenCV, PyTorch engines loaded cleanly!')"
+.\.venv\Scripts\python.exe -c "import fastapi, uvicorn, whisper, cv2, torch; print('    [OK] NextRise AI Engine: FastAPI, Whisper STT, OpenCV, PyTorch loaded cleanly!')"
 echo.
 
 echo ===============================================================================
-echo   CONGRATULATIONS! VIRALCUT AI STUDIO IS FULLY CONFIGURED AND READY TO USE!
+echo   CONGRATULATIONS! NEXTRISE CLIPPER AI IS FULLY CONFIGURED AND READY TO USE!
 echo ===============================================================================
 echo.
 echo   You can launch the studio now, or launch it later from the Desktop shortcut.
 echo.
-set /p LAUNCH_CHOICE="Do you want to launch the studio right now? (Y/N): "
+set /p LAUNCH_CHOICE="Do you want to launch NextRise Clipper AI right now? (Y/N): "
 if /i "%LAUNCH_CHOICE%"=="Y" (
     echo.
     echo [*] Launching studio...
     start start.bat
 ) else (
     echo.
-    echo [+] Setup finished. Double-click 'VIRALCUT AI Studio' on your Desktop whenever you want to use it.
+    echo [+] Setup finished. Double-click 'NextRise Clipper AI' on your Desktop whenever you want to use it.
     pause
 )

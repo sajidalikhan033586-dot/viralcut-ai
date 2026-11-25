@@ -1,7 +1,10 @@
 """
-VIRALCUT AI - Configuration Module
+NextRise Clipper AI - Configuration Module
+Developed for NextRise Digital (nextrisehq.com) - Learn. Earn. Rise.
 Manages system directories, default thresholds, AI model parameters, and FFmpeg configuration.
 """
+
+APP_NAME = "NextRise Clipper AI"
 
 import os
 import shutil

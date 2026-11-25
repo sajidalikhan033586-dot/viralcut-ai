@@ -1,5 +1,5 @@
 @echo off
-title VIRALCUT AI - Autonomous Viral Video Clipping Studio
+title NextRise Clipper AI - Autonomous Short-Form Video Studio
 color 0B
 cd /d "%~dp0"
 
@@ -13,7 +13,8 @@ if not exist ".\.venv\Scripts\python.exe" (
 )
 
 echo =====================================================================
-echo    VIRALCUT AI - Autonomous Short-Form Video Clipping Studio
+echo    NextRise Clipper AI - Autonomous Short-Form Video Studio
+echo             Powered by NextRise Digital (nextrisehq.com)
 echo =====================================================================
 echo.
 echo  [+] Launching local AI backend...

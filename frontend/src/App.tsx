@@ -254,18 +254,18 @@ export function App() {
         
         {/* Hero Section */}
         <div className="text-center max-w-3xl mx-auto space-y-3 pt-2">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-xs font-semibold mb-1 shadow-sm">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-xs font-semibold mb-1 shadow-sm">
             <Sparkles className="w-3.5 h-3.5 text-yellow-300 animate-pulse" />
-            <span>Autonomous Viral Moment Intelligence Engine</span>
+            <span>NextRise AI Studio • Autonomous Viral Moment Intelligence</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
             Turn Any Long Video Into <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-amber-300">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400">
               Viral Short-Form Clips
             </span>
           </h2>
           <p className="text-sm sm:text-base text-slate-400 max-w-2xl mx-auto leading-relaxed">
-            Automatic multimodal speech analysis, intelligent hook detection, dynamic 9:16 vertical reframing, and word-level animated captions. No manual scrubbing required.
+            Automatic multimodal speech analysis, intelligent hook detection, dynamic 9:16 vertical reframing, and word-level animated captions. Powered by NextRise Digital.
           </p>
         </div>
 
@@ -320,7 +320,15 @@ export function App() {
 
       {/* Footer */}
       <footer className="border-t border-slate-900 bg-slate-950/90 py-6 text-center text-xs text-slate-500">
-        <p>VIRALCUT AI — Autonomous Multilingual Video Intelligence Studio • Windows-First Local Processing</p>
+        <p className="flex items-center justify-center gap-2 flex-wrap">
+          <span className="text-slate-300 font-semibold">NextRise Clipper AI</span>
+          <span>•</span>
+          <span>NextRise Digital (SMC-Private) Limited</span>
+          <span>•</span>
+          <a href="https://nextrisehq.com" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">nextrisehq.com</a>
+          <span>•</span>
+          <span className="italic">Learn. Earn. Rise.</span>
+        </p>
       </footer>
 
       {/* Score Breakdown Modal */}
